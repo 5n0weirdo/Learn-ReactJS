@@ -4,15 +4,19 @@ import ReactDOM from "react-dom";
 
 function Greet() {
   return (
-    <div className="">
-      <h1>Hello World!</h1>
-      <ul>
-        <li>
-          <a href="#">Hello World</a>
-        </li>
-      </ul>
+    <div>
+      <Person />
+      <Message />
     </div>
   );
+}
+
+const Person = () => {
+  return <h2>Hello World!</h2>;
+};
+
+const Message = () => {
+  return <p>ReactJs power</p>;
 }
 
 ReactDOM.render(<Greet />, document.getElementById("root"));
